@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+    background: #91c8f0;
+    color: #333;
+  }
+
+  /* Top-right buttons */
+  .top-buttons {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .toggle-btn {
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+    color: #000;
+  }
+
+  .toggle-btn.active {
+    background-color: #222;
+    color: #fff;
+  }
+
+  .toggle-btn span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .toggle-indicator {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+
+  .toggle-btn.active .toggle-indicator {
+    transform: translateX(30px);
+    background-color: #32cd32;
+  }
+
+  /* Clock Container */
+  .container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s;
+  }
+
+  /* Clock Styling */
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff4500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  /* Dark Mode */
+  .dark-mode {
+    background: #222;
+    color: #fff;
+  }
+
+  .dark-mode .container {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .dark-mode h1 {
+    color: #32cd32;
+  }
+
+  .dark-mode .toggle-btn {
+    background-color: #444;
+    color: #ddd;
+  }

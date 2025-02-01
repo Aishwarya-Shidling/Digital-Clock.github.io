@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <!-- Top-right toggle buttons -->
+        <div class="top-buttons">
+          <div class="toggle-btn" onclick="toggleFormat()">
+            <span id="formatText">12-Hour Format</span>
+            <div class="toggle-indicator"></div>
+          </div>
+      
+          <div class="toggle-btn" onclick="toggleTheme()">
+            <span>Light Mode</span>
+            <div class="toggle-indicator"></div>
+          </div>
+        </div>
+      
+        <div class="container">
+          <h1 id="time">00:00:00</h1>
+          <p id="date">Loading...</p>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
